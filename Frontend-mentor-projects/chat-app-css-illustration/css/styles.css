@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Koulen&family=Lexend+Deca&family=Permanent+Marker&family=Poppins:wght@400;700;900&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Supermercado+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(270, 20%, 96%);
+}
+
+main {
+  /* position: relative; */
+}
+
+.heading {
+  width: 50%;
+  height: 30rem;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-right-radius: 45%;
+}
+
+.heading-body {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+.chat-head {
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  padding: 1rem;
+}
+
+.chat-head span {
+  /* float: left; */
+}
+
+.chat-head img {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.name {
+  /* margin: 0 4rem; */
+}
+
+.first-message-box {
+  margin: 2rem auto;
+}
+
+.first-para {
+  background-color: ;
+}
