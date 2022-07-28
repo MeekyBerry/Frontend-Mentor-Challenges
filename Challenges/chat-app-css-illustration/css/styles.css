@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Koulen&family=Lexend+Deca&family=Permanent+Marker&family=Poppins:wght@400;700;900&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Supermercado+One&display=swap");
+
+:root {
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+  --Pale-Violet: hsl(276, 100%, 81%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+  --White-color: hsl(0, 0%, 100%);
+  --Very-Dark-Desaturated: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  background-color: var(--Light-Grayish-Violet);
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  overflow: hidden;
+}
+
+.first-gradient {
+  width: 50%;
+  height: 30rem;
+  background-image: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
+  border-bottom-right-radius: 30rem;
+}
+
+.app-container {
+  position: relative;
+  height: 38.5rem;
+  background-color: var(--Light-Grayish-Violet);
+  padding: 0.5rem;
+  margin: -27rem 0rem 0 5rem;
+  border-radius: 2rem;
+  border: 0.8rem solid var(--White-color);
+}
+
+.empty-space {
+  position: absolute;
+  width: 10rem;
+  height: 2rem;
+  background-image: linear-gradient(var(--White-color), var(--White-color));
+  border: none;
+  border-radius: 1rem;
+  transform: translate(2rem, -1.2rem);
+  z-index: 1;
+}
+
+.app-header {
+  width: 100%;
+  background-image: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
+  padding: 1rem;
+  border-radius: 1.3rem 1.3rem 0.3rem 0.3rem;
+  display: grid;
+  grid-template-columns: auto auto 4fr auto;
+  gap: 0 0.5rem;
+}
+
+.first-font {
+  color: var(--White-color);
+}
+
+.second-font {
+  color: var(--White-color);
+  font-size: 10px;
+}
+
+.app-header img {
+  border: 2px solid var(--White-color);
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.name {
+  font-size: 12px;
+  color: var(--White-color);
+}
+.sub-heading {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--Pale-Violet);
+}
+
+.first-message-container {
+  width: 12rem;
+  font-size: 10px;
+  margin: 1rem 0;
+}
+
+.top-paragraph {
+  color: var(--Moderate-Violet);
+  margin: 0.3rem 0;
+  background-color: hsl(276, 100%, 81%, 20%);
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 1rem 0;
+  line-height: 1.6;
+}
+
+.second-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  align-items: flex-end;
+  color: var(--Desaturated-Dark-Violet);
+  font-size: 10px;
+}
+
+.img-container img {
+  width: 2.5rem;
+  border-radius: 1rem;
+}
+
+.middle-paragraph {
+  margin-top: 0.5rem;
+  background-color: var(--White-color);
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 0 1rem;
+  width: 10.5rem;
+}
+
+.middle-paragraph__second {
+  width: contain;
+  background-color: var(--White-color);
+  border-radius: 1rem 1rem 0 1rem;
+  margin: 0.5rem 0 0 3.5rem;
+  padding: 0.5rem;
+}
+
+.third-message-container {
+  width: 9.5rem;
+  font-size: 10px;
+  color: var(--Moderate-Violet);
+  margin: 0.5rem 0 1.5rem 0;
+  background-color: hsl(276, 100%, 81%, 20%);
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 1rem 0;
+  line-height: 1.6;
+}
+
+.price-container {
+  width: 11.5rem;
+  font-size: 10px;
+}
+
+.radio-container {
+  border-radius: 1rem 1rem 1rem 0;
+  background-color: var(--Very-Light-Magenta);
+  margin: 0.5rem auto;
+  padding: 0.4rem;
+  color: var(--White-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-btn {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--Very-Light-Magenta);
+  border: 1px dotted var(--White-color);
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+.first-label {
+  margin: 0.7rem 0.8rem 0 0;
+}
+
+.second-label {
+  margin: 0.7rem 2rem 0 0;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0.5rem 1rem;
+}
+
+.text-container {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--White-color);
+  padding-top: 0.2rem;
+}
+
+div .text-class:empty::before {
+  content: attr(placeholder);
+  color: var(--Grayish-Blue);
+  font-size: 10px;
+  padding-left: 1rem;
+}
+
+.btn {
+  height: 1.5rem;
+  color: var(--Very-Dark-Desaturated);
+}
+
+.booking-section {
+  text-align: center;
+  line-height: 2;
+  padding: 2rem;
+  font-size: 15px;
+  color: var(--Dark-Grayish-Violet);
+}
+
+h2 {
+  color: var(--Very-Dark-Desaturated);
+  font-size: 35px;
+}
+
+.second-gradient {
+  display: none;
+}
+
+.attribution {
+  text-align: center;
+  white-space: nowrap;
+  color: var(--Very-Dark-Desaturated);
+  font-size: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Very-Dark-Desaturated);
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    display: flex;
+    transform: translateX(-10rem);
+  }
+
+  .first-gradient {
+    width: 35rem;
+    height: 50rem;
+    border-radius: 0 0 45rem 45rem;
+  }
+
+  .app-container {
+    width: 18rem;
+    margin: 8rem 0 0 -3.4rem;
+  }
+
+  .booking-section {
+    text-align: start;
+    width: 30rem;
+    margin: 20rem 0 0 5rem;
+  }
+
+  .second-gradient {
+    display: block;
+    width: 18rem;
+    height: 50rem;
+    background-color: hsl(276, 100%, 81%, 10%);
+    position: absolute;
+    margin: -42rem 0rem 0 66rem;
+    z-index: -1;
+    border-top-left-radius: 20rem;
+  }
+
+  .attribution {
+    margin-top: 7rem;
+  }
+}

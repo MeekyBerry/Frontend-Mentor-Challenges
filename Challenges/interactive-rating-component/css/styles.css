@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700");
+
+:root {
+  /* Primary color */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  background: var(--very-dark-blue);
+}
+
+.container {
+  width: 88%;
+  height: auto;
+  margin: 10rem auto;
+  padding: 2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--dark-blue);
+  text-align: center;
+}
+
+.star-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5rem;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--white);
+  margin: 2rem 0 1rem 0;
+}
+
+p {
+  color: var(--medium-grey);
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.ratings {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  border-radius: 50%;
+  box-shadow: 0 0 5rem hsla(217, 12%, 63%, 0.377);
+  padding: 1rem 1.5rem;
+  color: var(--light-grey);
+}
+
+.number:active {
+  cursor: pointer;
+  background: var(--light-grey);
+}
+
+.number:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background: var(--orange);
+  border: none;
+  border-radius: 2rem;
+  color: var(--white);
+  transform: translateY(0.5rem);
+  font-weight: 700;
+}
+
+button:active {
+  background: var(--white);
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.second-container {
+  width: 88%;
+  height: auto;
+  margin: 10rem auto;
+  padding: 2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--dark-blue);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.confirmation-message {
+  box-shadow: 0 0 3rem var(--very-dark-blue);
+  width: 55%;
+  color: var(--orange);
+  border: none;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+
+  .second-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 25%;
+  }
+
+  .second-container {
+    width: 25%;
+  }
+}

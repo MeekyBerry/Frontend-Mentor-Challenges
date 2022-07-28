@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Koulen&family=Lexend+Deca&family=Permanent+Marker&family=Poppins:wght@400;700;900&family=Raleway:wght@500;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Supermercado+One&display=swap");
+
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+
+  /* Gradient color */
+  --gradient-from: hsl(6, 100%, 80%);
+  --gradient-to: hsl(335, 100%, 65%);
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-image: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-style {
+  display: none;
+}
+
+.first-container {
+  height: 10rem;
+  width: 18rem;
+  padding: 3rem;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 1rem 8rem 1rem 1rem;
+  margin-top: 10rem;
+}
+
+.logo {
+  padding: 1.5rem 0;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-svg {
+  background-color: var(--very-dark-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 1.5rem;
+}
+
+.second-container {
+  height: 8rem;
+  width: 18rem;
+  padding: 3rem;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 1rem;
+}
+
+.second-container div p {
+  color: var(--pale-blue);
+  font-weight: 700;
+}
+
+.container-text {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+.progress_bar {
+  height: 1.2rem;
+  position: relative;
+  touch-action: none;
+  width: 17rem;
+  background: var(--very-dark-blue);
+  border: none;
+  border-radius: 10rem;
+}
+
+.progress_bar-gradient {
+  height: 1rem;
+  width: 13rem;
+  background: linear-gradient(var(--gradient-from), var(--gradient-to));
+  border: 0.1rem solid;
+  border-radius: 10rem;
+}
+
+.progress_bar-btn {
+  cursor: default;
+  height: 0.75rem;
+  left: 12.4rem;
+  position: absolute;
+  top: 0.22rem;
+  width: 0.7rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.data {
+  width: 17rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.talk-bubble {
+  background-color: white;
+  position: relative;
+  width: 10rem;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  transform: translate(2rem, 0rem);
+  font-size: 11.6px;
+  display: flex;
+}
+
+.gb-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.gb-left {
+  margin: 1rem 0 0 .3rem;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.gb-left span {
+  margin-left: .3rem;
+}
+
+@media screen and (min-width: 1050px) {
+  body {
+    background-color: var(--very-dark-blue);
+    background-image: unset;
+    height: 100vh;
+    width: 100vw;
+  }
+
+
+  .background-style {
+    display: block;
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    transform: translateY(30rem);
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-17rem);
+  }
+
+  .first-container {
+    width: 20rem;
+    padding: 2rem;
+    height: 13rem;
+    transform: translateY(-1.3rem);
+  }
+
+  .second-container {
+    width: 40rem;
+    height: 9rem;
+    transform: translateY(5rem);
+    padding: 2rem;
+  }
+
+  .progress_bar {
+    width: 38rem;
+  }
+
+  .progress_bar-gradient {
+    width: 30rem;
+  }
+
+  .progress_bar-btn {
+    left: 29.3rem;
+  }
+
+  .data {
+    width: 38rem;
+  }
+
+  .talk-bubble {
+    width: 12rem;
+    transform: translate(24rem, -13rem);
+  }
+
+  .talk-bubble::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    left: auto;
+    bottom: -1.5rem;
+    border: 2rem solid;
+    border-color: white white transparent transparent;
+  }
+
+}
