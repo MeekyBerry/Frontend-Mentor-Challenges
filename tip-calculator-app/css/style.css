@@ -25,16 +25,19 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: "Space Mono", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   background-color: var(--Light-grayish-cyan);
-  height: 100vh;
-  width: 100vw;
+  color: var(--Grayish-cyan);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
 .heading-logo {
-  height: 17%;
+  height: 17rem;
   width: 100%;
   position: relative;
 }
@@ -48,15 +51,11 @@ body {
 
 .background {
   background-color: var(--White);
-  height: 80%;
+  height: auto;
   width: 100%;
   border-radius: 3rem;
-  padding: 5rem 3.5rem;
+  padding: 5rem;
 }
-
-.first-container {
-}
-
 
 label {
   display: block;
@@ -64,11 +63,17 @@ label {
 
 input {
   width: 100%;
-  padding: 1rem 0.1rem;
+  padding: 1rem 2rem;
   border: none;
+  font-size: 3rem;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  background: var(--Very-light-grayish-cyan) no-repeat left center;
+  background: var(--Very-light-grayish-cyan) no-repeat left;
+  background-size: 1.5rem;
+}
+
+input:focus {
+  outline: none;
 }
 
 input::placeholder {
@@ -77,6 +82,7 @@ input::placeholder {
 
 .bill-input {
   background-image: url(./images/icon-dollar.svg);
+  
 }
 
 .tip {
@@ -125,6 +131,8 @@ input::placeholder {
 
 .custom {
   grid-area: custom;
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
 }
 
 .number-input {
@@ -135,12 +143,53 @@ input::placeholder {
   margin-top: 2rem;
   background-color: var(--Very-dark-cyan);
   border-radius: 1rem;
-  padding: 2.5rem 1rem;
+  padding: 3rem 2rem;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+p {
+  color: var(--White);
+}
+
+.person {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--Dark-grayish-cyan);
+}
+
+.digit {
+  color: var(--Strong-cyan);
+  font-size: 3rem;
+}
+
+.digit svg {
+  margin-right: -1.5rem;
+}
+
+.dollar {
+  filter: var(--Strong-cyan);
+}
+
+button {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--Strong-cyan);
+  border: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Space Mono", sans-serif;
 }
 
 .attribution {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   text-align: center;
+  width: 88%; 
 }
 
 .attribution a {
