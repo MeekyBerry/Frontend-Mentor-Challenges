@@ -14,34 +14,53 @@
       <img src="./css/images/logo.svg" alt="Logo" class="logo">
     </div>
 
-    <div class="bg">
+    <form class="background">
       <div class="first-container">
+        <div class="bill-container">
         <label for="bill">Bill</label>
-        <input type="text" id="bill">
+        <input type="number" id="bill" placeholder="0" class="bill-input">
+        </div>
 
-        <div>
+        <div class="tip">
           <div>Select Tip %</div>
-          <div class="percent">5 %</div>
-          <div class="percent">10 %</div>
-          <div class="percent">15 %</div>
-          <div class="percent">20 %</div>
-          <div class="percent">25 %</div>
-          <div class="percent">Custom</div>
+          <div class="percent-container">
+          <div class="percent five">5 %</div>
+          <div class="percent ten">10 %</div>
+          <div class="percent fiftheen">15 %</div>
+          <div class="percent twenty-five">25 %</div>
+          <div class="percent fifty">50 %</div>
+          <div class="percent custom">Custom</div>
+          </div>
         </div>
 
         <div>
           <label for="number">Number of People</label>
-          <input type="text" id="number">
+          <input type="number" id="number" class="number-input" placeholder="0">
         </div>
       </div>
 
       <div class="second-container">
-        <div class="">Tip Amount <span>/ person</span></div>
-        <div class="">Total <span>/ person</span></div>
+        <div>
+          <div class="amount">
+            <p>Tip Amount <span>/ person</span></p>
+            <div class="">
+            <img src="./css/images/icon-dollar.svg" alt="Dollar icon">
+            0.00
+            </div>
+          </div>
+
+        <div>
+          <div class="amount">
+            <p>Total <span>/ person</span></p>
+            <div class="">
+            <img src="./css/images/icon-dollar.svg" alt="Dollar icon">
+            0.00
+            </div>
+          </div>
 
         <button>Reset</button>
       </div>
-    </div>
+    </form>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

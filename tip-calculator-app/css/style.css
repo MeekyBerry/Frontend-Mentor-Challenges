@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Space+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 :root {
   /* ### Primary */
@@ -27,22 +27,115 @@ html {
 body {
   font-size: 2.4rem;
   font-family: "Space Mono", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   background-color: var(--Light-grayish-cyan);
   height: 100vh;
   width: 100vw;
 }
 
-.bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.heading-logo {
+  height: 17%;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background {
   background-color: var(--White);
-  /* height: 50%; */
-  width: 50%;
-  /* padding: 3rem 2rem; */
-  margin-top: 20rem;
-  /* margin-left: 10rem; */
+  height: 80%;
+  width: 100%;
+  border-radius: 3rem;
+  padding: 5rem 3.5rem;
+}
+
+.first-container {
+}
+
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 0.1rem;
+  border: none;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  background: var(--Very-light-grayish-cyan) no-repeat left center;
+}
+
+input::placeholder {
+  text-align: end;
+}
+
+.bill-input {
+  background-image: url(./images/icon-dollar.svg);
+}
+
+.tip {
+  padding: 2rem 0;
+}
+
+.percent-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5rem;
+  grid-template-areas:
+    "five ten"
+    "fiftheen twentyFive"
+    "fifty custom";
+  padding: 1.5rem 0;
+}
+
+.percent {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.five {
+  grid-area: five;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.fiftheen {
+  grid-area: fiftheen;
+}
+
+.twenty-five {
+  grid-area: twentyFive;
+}
+
+.fifty {
+  grid-area: fifty;
+}
+
+.custom {
+  grid-area: custom;
+}
+
+.number-input {
+  background-image: url(./images/icon-person.svg);
+}
+
+.second-container {
+  margin-top: 2rem;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .attribution {
@@ -53,4 +146,3 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
