@@ -60,6 +60,11 @@ label {
   display: block;
 }
 
+.icon-box {
+  display: flex;
+  align-items: center;
+}
+
 input {
   width: 100%;
   border: none;
@@ -68,6 +73,7 @@ input {
   font-weight: 700;
   background: var(--Very-light-grayish-cyan) no-repeat left;
   background-size: 1.2rem;
+  text-align: end;
 }
 
 input:focus {
@@ -78,10 +84,6 @@ input::placeholder {
   text-align: end;
 }
 
-.bill-input {
-  background-image: url(./images/icon-dollar.svg);
-  
-}
 
 .tip {
   padding: 2rem 0;
@@ -105,6 +107,11 @@ input::placeholder {
   text-align: center;
   padding: 2rem;
   border-radius: 1rem;
+}
+
+.percent:hover {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Strong-cyan);
 }
 
 .five {
@@ -133,9 +140,6 @@ input::placeholder {
   color: var(--Very-dark-cyan);
 }
 
-.number-input {
-  background-image: url(./images/icon-person.svg);
-}
 
 .second-container {
   margin-top: 2rem;
