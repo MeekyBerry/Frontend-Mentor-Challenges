@@ -10,10 +10,11 @@
   --Light-grayish-cyan: hsl(185, 41%, 84%);
   --Very-light-grayish-cyan: hsl(189, 41%, 97%);
   --White: hsl(0, 0%, 100%);
+  --dark-blue: hsl(228, 45%, 44%);
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 *,
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   background-color: var(--Light-grayish-cyan);
@@ -35,8 +36,8 @@ body {
 }
 
 .heading-logo {
-  height: 17rem;
-  /* width: 100%; */
+  height: 20rem;
+  width: 100%;
   position: relative;
 }
 
@@ -48,12 +49,14 @@ body {
 }
 
 .background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--White);
-  height: auto;
+  height: 80rem;
   width: 100%;
-  border-radius: 3rem;
-  padding: 5rem 2rem;
-  margin: 0;
+  border-radius: 2rem;
+  padding: 0 5rem;
 }
 
 label {
@@ -65,40 +68,48 @@ label {
   align-items: center;
 }
 
-input {
+.input-bar {
   width: 100%;
+  height: 4rem;
   border: none;
   font-size: 2.5rem;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  background: var(--Very-light-grayish-cyan) no-repeat left;
-  background-size: 1.2rem;
+  background: var(--Very-light-grayish-cyan) no-repeat;
   text-align: end;
 }
 
-input:focus {
-  outline: none;
+.input-bar:focus {
+  outline-color: var(--Strong-cyan);
 }
 
-input::placeholder {
+.input-bar::placeholder {
   text-align: end;
 }
-
+/* Remove Arrows/Spinners ON INPUT */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 .tip {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .percent-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2.5rem;
   grid-template-areas:
     "five ten"
     "fiftheen twentyFive"
     "fifty custom";
-  padding: 1.5rem 0;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
 .percent {
@@ -107,12 +118,16 @@ input::placeholder {
   text-align: center;
   padding: 2rem;
   border-radius: 1rem;
+  border: none;
+  font-size: 2rem;
+  /* width: 100%; */
 }
 
-.percent:hover {
-  background-color: var(--Very-light-grayish-cyan);
-  color: var(--Strong-cyan);
-}
+/* .percent:active {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+} */
 
 .five {
   grid-area: five;
@@ -136,13 +151,29 @@ input::placeholder {
 
 .custom {
   grid-area: custom;
-  background-color: var(--Light-grayish-cyan);
+  /* background-color: var(--Very-light-grayish-cyan);
   color: var(--Very-dark-cyan);
+  border: 1px solid var(--Strong-cyan); */
 }
 
+.custom > .percent {
+  width: 100%;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  border: 1px solid var(--Strong-cyan);
+}
+
+.custom-active {
+  /* background-color: var(--Very-light-grayish-cyan); */
+  /* color: var(--Very-dark-cyan); */
+  /* font-weight: 700; */
+  /* width: 6rem;
+  height: 6rem; */
+  /* padding: 0;
+  margin: 0; */
+}
 
 .second-container {
-  margin-top: 2rem;
   background-color: var(--Very-dark-cyan);
   border-radius: 1rem;
   padding: 3rem 2rem;
@@ -177,51 +208,43 @@ p {
   filter: var(--Strong-cyan);
 }
 
-button {
+.btn {
   width: 100%;
   padding: 1rem;
   background-color: var(--Dark-grayish-cyan);
   color: var(--Very-dark-cyan);
   border: none;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   font-family: "Space Mono", sans-serif;
-  
+  opacity: 0.3;
 }
 
 .attribution {
   font-size: 1.8rem;
   text-align: center;
-  width: 88%; 
+  width: 88%;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .background {
-    width: 55%;
-    height: 75vh;
+    width: 75%;
+    height: 75%;
     margin: 0rem auto;
-    display: flex;
+    flex-direction: row;
     gap: 2rem;
-    padding: 2rem 1rem;
-    font-size: 1.8rem;
-  }
-
-  .tip {
-    padding: 1rem;
-  }
-
-  .percent-container {
-    gap: 1rem;
-    padding: .5rem 0;
-  }
-
-  .percent {
-    padding: .5rem;
+    padding: 2rem;
   }
 
   .first-container {
@@ -231,13 +254,21 @@ button {
     width: 50%;
   }
 
+  .percent-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "five ten fiftheen"
+      "twentyFive fifty custom";
+  }
+
   .second-container {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  .btn {
+  .btn-wrapper {
     margin-top: auto;
   }
 }
