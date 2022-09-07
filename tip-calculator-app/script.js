@@ -9,9 +9,10 @@ const CUSTOM_INPUT = document.getElementById('cst-input')
 
 let billValue;
 let person;
+let customValue;
 let custom = 0;
 
-let myArray = [5, 10, 15, 25, 50];
+let myArray = [5, 10, 15, 25, 50, custom];
 let tipAmount = 0;
 
 let error = true;
@@ -27,15 +28,12 @@ const calculateHandler = () => {
 BILL.addEventListener('change', () => {
     error = !error;
     billValue = +BILL.value;
-    // console.log(billValue)
     TIP_PERCENT.forEach((el, idx) => {
         let percent = myArray[idx];
         el.addEventListener('click', () => {
             if (CUSTOM.firstElementChild === CUSTOM_INPUT && idx === 5) {
-                console.log('yes')
                 CUSTOM_INPUT.addEventListener('change', () => {
-                    console.log('yes')
-                    percent = 20;
+                    customValue = +CUSTOM_INPUT.value;
                 })
             }
             tipAmount = BILL.value * (+percent / 100);
@@ -48,7 +46,6 @@ BILL.addEventListener('change', () => {
 PEOPLE.addEventListener('input', () => {
     inputPeople = !inputPeople;
     person = +PEOPLE.value;
-    // console.log(person)
     if (!error) {
         calculateHandler();
     }
@@ -56,7 +53,6 @@ PEOPLE.addEventListener('input', () => {
 
 CUSTOM.addEventListener('click', () => {
     if (CUSTOM.firstElementChild === CUSTOM_BUTTON) {
-        CUSTOM.innerHTML = `<input type="number" id="cst-input" class="percent" placeholder="Custom" />`
+        CUSTOM.innerHTML = `<input type="number" id="cst-input" class="percent cst" />`
     }
-
 })

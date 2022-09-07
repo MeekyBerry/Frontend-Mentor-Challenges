@@ -120,14 +120,14 @@ input[type="number"] {
   border-radius: 1rem;
   border: none;
   font-size: 2rem;
-  /* width: 100%; */
+  width: 100%;
 }
 
-/* .percent:active {
+.percent:active {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
   font-weight: 700;
-} */
+}
 
 .five {
   grid-area: five;
@@ -151,26 +151,17 @@ input[type="number"] {
 
 .custom {
   grid-area: custom;
-  /* background-color: var(--Very-light-grayish-cyan);
-  color: var(--Very-dark-cyan);
-  border: 1px solid var(--Strong-cyan); */
 }
 
 .custom > .percent {
   width: 100%;
   background-color: var(--Very-light-grayish-cyan);
   color: var(--Very-dark-cyan);
-  border: 1px solid var(--Strong-cyan);
 }
 
-.custom-active {
-  /* background-color: var(--Very-light-grayish-cyan); */
-  /* color: var(--Very-dark-cyan); */
-  /* font-weight: 700; */
-  /* width: 6rem;
-  height: 6rem; */
-  /* padding: 0;
-  margin: 0; */
+.cst:focus {
+  outline-color: var(--Strong-cyan);
+  text-align: end;
 }
 
 .second-container {
@@ -198,10 +189,6 @@ p {
 .digit {
   color: var(--Strong-cyan);
   font-size: 3rem;
-}
-
-.digit svg {
-  margin-right: -1.5rem;
 }
 
 .dollar {
