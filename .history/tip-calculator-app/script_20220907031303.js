@@ -55,4 +55,4 @@ CUSTOM.addEventListener('click', () => {
     if (CUSTOM.firstElementChild === CUSTOM_BUTTON) {
         CUSTOM.innerHTML = `<input type="number" id="cst-input" class="percent cst" />`
     }
-}) 
+})
