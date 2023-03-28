@@ -18,6 +18,7 @@ These are my solutions to [ All challenges I attempt on Frontend Mentor](https:/
 * [CSS Chat App Illustration](https://gregarious-taiyaki-650222.netlify.app)
 * [Flyo Data Store Layout](https://beamish-torte-ffcbb8.netlify.app)
 * [Interactive Rating Component](https://frabjous-jelly-224945.netlify.app)
+* [tip-calculator](https://mikky-tip-calculator.vercel.app/)
 
 ## Author
 
