@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  /* ### Primary */
+  --Strong-cyan: hsl(172, 67%, 45%);
+  /* ### Neutral */
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --dark-blue: hsl(228, 45%, 44%);
+}
+
+html {
+  font-size: 50%;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Grayish-cyan);
+  height: 100%;
+  width: 100%;
+}
+
+.heading-logo {
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--White);
+  height: 80rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+label {
+  display: block;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-bar {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  font-size: 2.5rem;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  background: var(--Very-light-grayish-cyan) no-repeat;
+  text-align: end;
+}
+
+.input-bar:focus {
+  outline-color: var(--Strong-cyan);
+}
+
+.input-bar::placeholder {
+  text-align: end;
+}
+
+/* Remove Arrows/Spinners ON INPUT */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tip {
+  padding: 1rem 0;
+}
+
+.percent-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "five ten"
+    "fiftheen twentyFive"
+    "fifty custom";
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.percent {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.percent:active {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+}
+
+.five {
+  grid-area: five;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.fiftheen {
+  grid-area: fiftheen;
+}
+
+.twenty-five {
+  grid-area: twentyFive;
+}
+
+.fifty {
+  grid-area: fifty;
+}
+
+.custom {
+  grid-area: custom;
+}
+
+.custom-input {
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.custom-input:focus {
+  outline-color: var(--Strong-cyan);
+}
+
+.second-container {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+p {
+  color: var(--White);
+}
+
+.person {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--Dark-grayish-cyan);
+}
+
+.digit {
+  color: var(--Strong-cyan);
+  font-size: 3rem;
+}
+
+.dollar {
+  filter: var(--Strong-cyan);
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--Dark-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Space Mono", sans-serif;
+  opacity: 0.3;
+}
+
+.attribution {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 88%;
+}
+
+.attribution a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .background {
+    width: 75%;
+    height: 75%;
+    margin: 2rem auto;
+    flex-direction: row;
+    gap: 2rem;
+    /* padding: 2rem; */
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .percent-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "five ten fiftheen"
+      "twentyFive fifty custom";
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .btn-wrapper {
+    margin-top: auto;
+  }
+}
