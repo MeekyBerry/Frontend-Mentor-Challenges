@@ -8,7 +8,7 @@ Users should be able to:
 - **Bonus**: See the chat interface animate on the initial load
 
 ### Live url
-* [Order Summary Card Component](https://order-summary-card-project.netlify.app/)
+* [CSS Chat App Illustration](https://chat-app-css-project.netlify.app)
 
 ####
 Project designs from Frontend Mentor
