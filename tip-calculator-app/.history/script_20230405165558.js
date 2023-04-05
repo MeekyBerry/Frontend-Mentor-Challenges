@@ -59,6 +59,9 @@ peopleInput.addEventListener("input", () => {
     calculateTip();
     disableReset();
   }
+  // people = Number(peopleInput.value);
+  // calculateTip();
+  // disableReset();
 });
 
 // add event listeners for tip buttons

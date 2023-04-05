@@ -52,7 +52,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 1rem;
   background-color: var(--White);
   height: 100%;
   width: 70%;
@@ -251,16 +250,6 @@ p {
   color: var(--dark-blue);
   text-decoration: none;
   font-style: italic;
-}
-
-@media only screen and (min-width: 600px) {
-  html {
-    font-size: 56.25%
-  }
-
-  .background {
-    width: 50%;
-  }
 }
 
 @media only screen and (min-width: 900px) {

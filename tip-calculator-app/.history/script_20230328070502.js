@@ -41,24 +41,21 @@ const calculateTip = () => {
 };
 
 // add event listener for bill input
-billInput.addEventListener("input", () => {
+billInput.addEventListener("change", () => {
   bill = Number(billInput.value);
   calculateTip();
   disableReset();
 });
 
 // add event listener for people input
-peopleInput.addEventListener("input", () => {
+peopleInput.addEventListener("change", () => {
   if (peopleInput.value === "0") {
     validatePeople.style.display = "block";
     peopleInput.style.outlineColor = "red";
-  } else {
-    validatePeople.style.display = "none";
-    peopleInput.style.outlineColor = "hsl(172, 67%, 45%)";
-    people = Number(peopleInput.value);
-    calculateTip();
-    disableReset();
   }
+  people = Number(peopleInput.value);
+  calculateTip();
+  disableReset();
 });
 
 // add event listeners for tip buttons
@@ -80,7 +77,7 @@ tipButtons.forEach((button) => {
 });
 
 // add event listener for custom input
-customInput.addEventListener("input", () => {
+customInput.addEventListener("change", () => {
   customPercentage = Number(customInput.value);
   calculateTip();
 });

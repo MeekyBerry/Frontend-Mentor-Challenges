@@ -52,13 +52,10 @@ peopleInput.addEventListener("input", () => {
   if (peopleInput.value === "0") {
     validatePeople.style.display = "block";
     peopleInput.style.outlineColor = "red";
-  } else {
-    validatePeople.style.display = "none";
-    peopleInput.style.outlineColor = "hsl(172, 67%, 45%)";
-    people = Number(peopleInput.value);
-    calculateTip();
-    disableReset();
   }
+  people = Number(peopleInput.value);
+  calculateTip();
+  disableReset();
 });
 
 // add event listeners for tip buttons

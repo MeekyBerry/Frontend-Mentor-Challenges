@@ -52,13 +52,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 1rem;
   background-color: var(--White);
-  height: 100%;
-  width: 70%;
+  height: 80rem;
+  width: 90%;
   border-radius: 2rem;
-  padding: 1rem 2rem;
-  margin: 2rem auto;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .people-validate {
@@ -130,7 +129,8 @@ input[type="number"] {
     "five ten"
     "fiftheen twentyFive"
     "fifty custom";
-  gap: .5rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .percent {
@@ -139,8 +139,8 @@ input[type="number"] {
   text-align: center;
   border-radius: 1rem;
   border: none;
-  font-size: 1.5rem;
-  width: 95%;
+  font-size: 1.8rem;
+  width: 100%;
   height: 4rem;
 }
 
@@ -179,8 +179,8 @@ input[type="number"] {
   color: var(--Very-dark-cyan);
   border: none;
   border-radius: 1rem;
-  padding: 0 1rem;
-  font-size: 1.5rem;
+  padding: 0 2rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: end;
   width: 100%;
@@ -251,16 +251,6 @@ p {
   color: var(--dark-blue);
   text-decoration: none;
   font-style: italic;
-}
-
-@media only screen and (min-width: 600px) {
-  html {
-    font-size: 56.25%
-  }
-
-  .background {
-    width: 50%;
-  }
 }
 
 @media only screen and (min-width: 900px) {

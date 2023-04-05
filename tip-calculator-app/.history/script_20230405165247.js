@@ -49,7 +49,7 @@ billInput.addEventListener("input", () => {
 
 // add event listener for people input
 peopleInput.addEventListener("input", () => {
-  if (peopleInput.value === "0") {
+  if (peopleInput.value <= "0") {
     validatePeople.style.display = "block";
     peopleInput.style.outlineColor = "red";
   } else {
@@ -59,6 +59,9 @@ peopleInput.addEventListener("input", () => {
     calculateTip();
     disableReset();
   }
+  // people = Number(peopleInput.value);
+  // calculateTip();
+  // disableReset();
 });
 
 // add event listeners for tip buttons

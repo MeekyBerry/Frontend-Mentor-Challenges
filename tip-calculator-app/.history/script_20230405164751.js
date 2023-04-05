@@ -30,6 +30,7 @@ let error = true;
 const calculateTip = () => {
   if (people > 0) {
     inputPeople = true;
+    // ??
     let tip = (bill * (tipPercentage + customPercentage)) / 100;
     let total = bill + tip;
     let tipPerPerson = tip / people;
@@ -49,16 +50,13 @@ billInput.addEventListener("input", () => {
 
 // add event listener for people input
 peopleInput.addEventListener("input", () => {
-  if (peopleInput.value === "0") {
+  if (peopleInput.value <= "0") {
     validatePeople.style.display = "block";
     peopleInput.style.outlineColor = "red";
-  } else {
-    validatePeople.style.display = "none";
-    peopleInput.style.outlineColor = "hsl(172, 67%, 45%)";
-    people = Number(peopleInput.value);
-    calculateTip();
-    disableReset();
   }
+  people = Number(peopleInput.value);
+  calculateTip();
+  disableReset();
 });
 
 // add event listeners for tip buttons

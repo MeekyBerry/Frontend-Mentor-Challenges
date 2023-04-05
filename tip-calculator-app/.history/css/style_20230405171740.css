@@ -52,7 +52,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 1rem;
   background-color: var(--White);
   height: 100%;
   width: 70%;
@@ -259,7 +258,12 @@ p {
   }
 
   .background {
-    width: 50%;
+    width: 80%;
+    height: 80%;
+    /* margin: 3rem auto;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem; */
   }
 }
 
