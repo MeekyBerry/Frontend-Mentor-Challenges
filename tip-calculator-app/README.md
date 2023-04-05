@@ -11,6 +11,9 @@ Users should be able to:
 - Use the reset button to reset the inputted values.
 - See input validation to ensure that the number of people entered is not zero
 
+### Live Url
+- [tip-calculator](https://mikky-tip-calculator.vercel.app/)
+
 ####
 Project designs from Frontend Mentor
 Frontend mentor challenge
