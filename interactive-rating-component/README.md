@@ -9,6 +9,9 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
+### Live url
+* [Interactive Rating Component](https://interactive-ratings-component-project.netlify.app)
+
 
 ####
 Project designs from Frontend Mentor

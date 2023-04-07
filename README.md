@@ -12,12 +12,12 @@ These are my solutions to [ All challenges I attempt on Frontend Mentor](https:/
 - JS
 
 ###  Projects Live url
-* [Order Summary Card Component](https://meek-fox-3d7860.netlify.app)
-* [Stats Preview Card Component](https://elaborate-kulfi-b48c1f.netlify.app)
-* [Testimonial Grid Section](https://quiet-profiterole-f791be.netlify.app)
-* [CSS Chat App Illustration](https://gregarious-taiyaki-650222.netlify.app)
-* [Flyo Data Store Layout](https://beamish-torte-ffcbb8.netlify.app)
-* [Interactive Rating Component](https://frabjous-jelly-224945.netlify.app)
+* [Order Summary Card Component](https://order-summary-card-project.netlify.app/)
+* [Stats Preview Card Component](https://stats-preview-card-project.netlify.app/)
+* [Testimonial Grid Section](https://testimonial-grids-section.netlify.app/)
+* [CSS Chat App Illustration](https://chat-app-css-project.netlify.app)
+* [Flyo Data Store Layout](https://fylo-data-store-layout.netlify.app/)
+* [Interactive Rating Component](https://interactive-ratings-component-project.netlify.app)
 * [tip-calculator](https://mikky-tip-calculator.vercel.app/)
 
 ## Author
