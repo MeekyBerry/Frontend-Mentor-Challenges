@@ -119,7 +119,7 @@ const disableReset = () => {
 
 // add event listeners for reset button for the active state
 resetButton.addEventListener("mousedown", () => {
-  resetButton.style.backgroundColor = "hsl(185, 41%, 70%)";
+  resetButton.style.backgroundColor = "hsl(185, 41%, 84%)";
 });
 
 resetButton.addEventListener("mouseup", () => {

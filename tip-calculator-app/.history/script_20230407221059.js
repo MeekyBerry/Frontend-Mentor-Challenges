@@ -104,11 +104,7 @@ resetButton.addEventListener("click", () => {
 
 // disable reset button
 const disableReset = () => {
-  if (
-    billInput.value.trim() === "" &&
-    peopleInput.value.trim() === "" &&
-    customInput.value.trim() === ""
-  ) {
+  if (billInput.value.trim() === "" && peopleInput.value.trim() === "" && customInput.value.trim() === "") {
     resetButton.disabled = true;
     resetButton.style.backgroundColor = "hsl(183, 100%, 25%)";
   } else {
@@ -119,7 +115,7 @@ const disableReset = () => {
 
 // add event listeners for reset button for the active state
 resetButton.addEventListener("mousedown", () => {
-  resetButton.style.backgroundColor = "hsl(185, 41%, 70%)";
+  resetButton.style.backgroundColor = "hsl(185, 41%, 84%)";
 });
 
 resetButton.addEventListener("mouseup", () => {

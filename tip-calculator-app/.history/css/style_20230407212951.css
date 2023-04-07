@@ -170,7 +170,6 @@ input[type="number"] {
   text-align: center;
   border: none;
   font-size: 1.2rem;
-  font-family: "Space Mono", sans-serif;
   width: 100%;
   height: 3.5rem;
   border-radius: .5rem;
@@ -219,7 +218,6 @@ input[type="number"] {
   border: none;
   padding: 0 1rem;
   font-size: 1.5rem;
-  font-family: "Space Mono", sans-serif;
   font-weight: 700;
   text-align: end;
   width: 100%;
@@ -243,23 +241,17 @@ input[type="number"] {
   margin: 0 auto;
 }
 
-.second-container__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .amount {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: .5rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 2rem 1rem;
 }
 
 .total {
   color: var(--White);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .person {
@@ -272,6 +264,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* gap: 1rem; */
 }
 
 svg {
@@ -280,7 +273,7 @@ svg {
 }
 
 .amount-span {
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--Strong-cyan);
 }
 
@@ -288,7 +281,6 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .btn {
@@ -341,7 +333,7 @@ svg {
     margin: 2rem auto;
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .first-container {

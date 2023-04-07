@@ -57,7 +57,7 @@ body {
   height: 100%;
   width: 60%;
   border-radius: 1rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin: 2rem auto;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -67,40 +67,24 @@ body {
 
 .first-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.first-container__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  width: 90%;
 }
 
 .people-validate {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
 }
 
 .people-zero {
   color: red;
-  font-size: 1rem;
-  font-family: "Space Mono", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
-  align-self: flex-end;
   display: none;
 }
 
 label {
-  font-size: 1.3rem;
-  align-self: flex-start;
+  /* display: block; */
+  font-size: 1.5rem;
 }
 
 .input-bar {
@@ -108,6 +92,7 @@ label {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 3.5rem;
   border: none;
   border-radius: .5rem;
   font-size: 2.5rem;
@@ -144,11 +129,11 @@ input[type="number"] {
 
 .tip {
   padding: 1rem 0;
-  width: 90%;
+  width: 100%;
 }
 
 .tip--heading {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: .5rem;
 }
 
@@ -160,8 +145,8 @@ input[type="number"] {
     "five ten"
     "fiftheen twentyFive"
     "fifty custom";
-  place-items: center;
-  gap: 1.5rem;
+    place-items: center;
+  gap: 1.5rem 0;
 }
 
 .percent {
@@ -170,8 +155,7 @@ input[type="number"] {
   text-align: center;
   border: none;
   font-size: 1.2rem;
-  font-family: "Space Mono", sans-serif;
-  width: 100%;
+  width: 80%;
   height: 3.5rem;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
@@ -210,25 +194,19 @@ input[type="number"] {
   grid-area: custom;
   background-color: var(--Very-light-grayish-cyan);
   color: var(--Very-dark-cyan);
-  font-weight: 700;
 }
 
 .custom-input {
   background-color: var(--Very-light-grayish-cyan);
   color: var(--Very-dark-cyan);
   border: none;
+  border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
-  font-family: "Space Mono", sans-serif;
   font-weight: 700;
   text-align: end;
   width: 100%;
   height: 100%;
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
 }
 
 .custom-input:focus {
@@ -238,33 +216,22 @@ input[type="number"] {
 .second-container {
   background-color: var(--Very-dark-cyan);
   border-radius: 1rem;
-  padding: 2rem 1rem;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.second-container__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 3rem 2rem;
 }
 
 .amount {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: .5rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
-.total {
+p {
   color: var(--White);
-  font-size: 1.2rem;
 }
 
 .person {
   display: block;
-  font-size: rem;
+  font-size: 1.8rem;
   color: var(--Dark-grayish-cyan);
 }
 
@@ -272,11 +239,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-svg {
-  width: 2rem;
-  height: 2rem;
+  gap: .5rem;
 }
 
 .amount-span {
@@ -284,28 +247,21 @@ svg {
   color: var(--Strong-cyan);
 }
 
-.btn-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-
 .btn {
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   background-color: hsl(183, 100%, 20%);
   color: var(--Very-dark-cyan);
   border: none;
+  border-radius: 1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Space Mono", sans-serif;
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .attribution {
@@ -341,7 +297,7 @@ svg {
     margin: 2rem auto;
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .first-container {

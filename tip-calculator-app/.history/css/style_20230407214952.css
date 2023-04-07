@@ -219,7 +219,6 @@ input[type="number"] {
   border: none;
   padding: 0 1rem;
   font-size: 1.5rem;
-  font-family: "Space Mono", sans-serif;
   font-weight: 700;
   text-align: end;
   width: 100%;
@@ -341,7 +340,7 @@ svg {
     margin: 2rem auto;
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .first-container {

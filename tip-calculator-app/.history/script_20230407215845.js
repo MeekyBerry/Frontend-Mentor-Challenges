@@ -82,7 +82,6 @@ tipButtons.forEach((button) => {
 customInput.addEventListener("input", () => {
   customPercentage = Number(customInput.value);
   calculateTip();
-  disableReset();
 });
 
 // add event listener for reset button
@@ -99,16 +98,13 @@ resetButton.addEventListener("click", () => {
     customInput.parentNode.replaceChild(customButton, customInput);
   }
   resetButton.disabled = true;
+  disableReset();
   validatePeople.style.display = "none";
 });
 
 // disable reset button
 const disableReset = () => {
-  if (
-    billInput.value.trim() === "" &&
-    peopleInput.value.trim() === "" &&
-    customInput.value.trim() === ""
-  ) {
+  if (billInput.value.trim() === "" && peopleInput.value.trim() === "") {
     resetButton.disabled = true;
     resetButton.style.backgroundColor = "hsl(183, 100%, 25%)";
   } else {
@@ -117,11 +113,11 @@ const disableReset = () => {
   }
 };
 
-// add event listeners for reset button for the active state
-resetButton.addEventListener("mousedown", () => {
-  resetButton.style.backgroundColor = "hsl(185, 41%, 70%)";
-});
+// // add event listeners for reset button for the active state
+// resetButton.addEventListener("mousedown", () => {
+//   resetButton.style.backgroundColor = "hsl(185, 41%, 84%)";
+// });
 
-resetButton.addEventListener("mouseup", () => {
-  resetButton.style.backgroundColor = "hsl(183, 100%, 25%)";
-});
+// resetButton.addEventListener("mouseup", () => {
+//   resetButton.style.backgroundColor = "hsl(183, 100%, 25%)";
+// });
